@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <script src="https://kit.fontawesome.com/0038dd4693.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <style>
+   	body{
+   		background-color: #00004d;
+   		color: white;
+   	}
+   	@media screen and (min-width: 768px)
+	{
+		#four button{
+			margin-top: -150px;
+		}
+	}
+	button{
+		color: white;
+		margin-top: 7px;
+	}
+	.center{
+		margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+	}
+
+ li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+  input[type=text] {
+
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+ 
+  font-size: 17px;
+}
+.btn:hover{
+	background-color: #00FFEF;
+}
+#bta button {
+  float: left;
+  padding: 6px;
+  padding-right: 10px;
+  background: #003168;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-radius: 7px;
+  margin-top: 8px;
+  color: white;
+  font-weight: normal;
+	}
+#four button{
+	display: inline;
+	width: 100%;
+	color: white;
+	border-radius: 15px;
+    height: 70%;
+	border: none;
+	padding: 21px;
+	margin: 10px;
+}
+#four i{
+	float: left;
+	}
+	#four h6{
+		float: left;
+	}
+	@media screen and (max-width: 450px)
+	{
+		#hey{
+    	margin-top: -110px;
+    }
+    #you{
+    	margin-top: 10px;
+    }
+    #last i{
+    	font-size: 6px;
+    }
+    h3{
+    	font-size: 16px;
+    }
+    button{
+    	font-size: 11px;
+    }
+    #four button{
+    	font-size: 14px;
+    }
+	}
+	@media screen and (max-width: 768px)
+   {
+   	 h6{
+    font-size: 10px;
+   	}
+   	#four button{
+   		width: 90%;
+    }
+   }
+   @media screen and (min-width: 768px)
+   {
+#last{
+	margin-top: -160px;
+}
+   }
+   </style>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row">
+	<div class="col-md-3 col-12" style="background-color: #003168; height: 100%;">
+    <img src="ssf.png">
+	</div>
+	<div class="col-md-6 col-12">
+		<div id="bta">
+    <input type="text" placeholder="Search Here" style="background-color: #003168; width: 70%; border-radius: 7px; color: white;">
+    <button  type="submit"><i class="fa fa-search"></i></button>
+    </div>
+</div>
+	<div class="col-md-3 col-12" id="hey">
+		<div id="one" style="float: right;">
+    <i class="far fa-bell m-3" style="color: white;font-size: 20px;"></i>
+    <button class="btn text-light" style="background-color: #00FFEF ; border-radius: 12px;">Buy Now</button>
+</div>
+</div>
+<div class="col-md-3 col-12" style="background-color: #003168;" id="you">
+    <nav class="navbar navbar-expand-sm navbar-dark w-100">
+		<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#collapsenavbar" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="navbar-collapse text-center collapse" id="collapsenavbar">
+		<ul style="list-style-type: none;margin-left: -40px; width: 100%; height: 100%;">
+				<li>
+				 <a href="#" class=" text-light text-decoration-none"><i class="fa fa-dashboard">&nbsp;&nbsp;Dashboard</i></a>
+				<li>
+                   <a href="#" class="text-light text-decoration-none"><i class="fa fa-calendar-o">&nbsp;&nbsp;Transaction</i></a>
+                </li>
+				<li>
+				  <a href="#" class="text-light text-decoration-none"><i class="fa fa-search">&nbsp;&nbsp;Discover</i></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</div>
+    <div class="col-md-2 col-12" id="four">
+    <button style="background-image: linear-gradient(135deg,blue,navy)"><h6>Total Balance<br><i class="fas fa-coins fa-2x" style="color: yellow;">1500</i></h6></button></div>
+    <div class="col-md-2 col-12" id="four">
+    <button style="background-image: linear-gradient(135deg,#00FFEF,#00b3a7);"><h6>Redeemable Balance<br><i class="fa fa-coins fa-2x" style="color: yellow;">820</i></h6></button></div>
+    <div class="col-md-2 col-12" id="four">
+    <button style="background-image: linear-gradient(135deg,#00FFEF,#00b3a7)"><h6>Total Earnings<br><i class="fa fa-coins fa-2x" style="color: yellow;">100</i></h6></button></div>
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-3" style="background-color: #003168">
+    </div>
+    <div class="col-md-6 col-12">
+    	<h3>Recent Transaction<div class="btn text-light" style="border-color: white;float: right; ">View all</div></h3>
+    	<hr color="white">
+    	<div class="btn text-light" style=" background-color: #003168">Filter</div>
+    	<div class="btn text-light" style="background-color: #003168">All</div>
+    	<div class="btn text-light" style="background-color: #003168">Purchased</div>
+    	<div class="btn text-light" style="background-color: #003168">Gift</div>
+    	<div class="btn text-light" style="background-color: #003168">My Earning</div><br>
+    	<button style="width: 100%;background-color: #003168; border-radius: 12px; border:none;"><i class="fas fa-coins" style="float: left">Withdraw</i><h6 style="float: right; color: gold;">-100</h6><br><p style="float: right;">29 Jan,2020 10:30 AM</p></button>
+    	<button style="width: 100%;background-color: #003168; border-radius: 12px; border:none;"><i class="fas fa-coins" style="float: left">Withdraw</i><h6 style="float: right; color: gold;">-100</h6><br><p style="float: right;">29 Jan,2020 10:30 AM</p></button>
+    	<button style="width: 100%;background-color: #003168; border-radius: 12px; border:none;"><i class="fas fa-coins" style="float: left">Withdraw</i><h6 style="float: right; color: gold;">-100</h6><br><p style="float: right;">29 Jan,2020 10:30 AM</p></button>
+    	<button style="width: 100%;background-color: #003168; border-radius: 12px; border:none;"><i class="fas fa-coins" style="float: left">Withdraw</i><h6 style="float: right; color: gold;">-100</h6><br><p style="float: right;">29 Jan,2020 10:30 AM</p></button>
+    	<button style="width: 100%;background-color: #003168; border-radius: 12px; border:none;"><i class="fas fa-coins" style="float: left">Withdraw</i><h6 style="float: right; color: gold;">-100</h6><br><p style="float: right;">29 Jan,2020 10:30 AM</p></button>
+    	<button style="width: 100%;background-color: #003168; border-radius: 12px; border:none;"><i class="fas fa-coins" style="float: left">Withdraw</i><h6 style="float: right; color: gold;">-100</h6><br><p style="float: right;">29 Jan,2020 10:30 AM</p></button>
+</div>
+<div class=" col-md-3 col-12" id="last">
+	<div class="card text-center m-3 p-4" style="background-color: #003168; border-radius: 17px;">
+		<img src="https://www.pispl.in/assets/images/value_added/SPECIALIZED-SERVICES.png" width="30%" height="auto" class="center">
+		<h5>John Wick</h5>
+		<p>johnwick@email.com</p>
+		<button style="background-color: #00FFEF ; border-radius: 12px;">Buy Now</button>
+		<button style="background-color:#00004d; border:none;">Redeem</button>
+	</div>
+		<button style="background-image: linear-gradient(135deg,blue,navy);border:none; border-radius: 15px;"><i class="fa fa-gift" style="font-size: 30px;">&nbsp;&nbsp;Send Coin as gift</i>
+			<p style="color: grey">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></button>
+			<button style="background-image: linear-gradient(135deg,blue,navy);border:none; border-radius: 15px;"><i class="fa fa-upload" style="font-size: 30px;">&nbsp;&nbsp;Send Coin as gift</i>
+			<p style="color: grey">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></button>
+			<button style="background-image: linear-gradient(135deg,blue,navy);border:none; border-radius: 15px;"><i class="fa fa-share" style="font-size: 30px;">&nbsp;&nbsp;Send Coin as gift</i>
+			<p style="color: grey">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></button>
+</div>
+	</div>
+</div>
+</body>
+</html>
