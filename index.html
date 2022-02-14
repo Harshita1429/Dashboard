@@ -99,6 +99,12 @@ color: #00FFEF ;
     button{
     	font-size: 11px;
     }
+    h2{
+    	font-size: 14px;
+    }
+    p{
+    	font-size: 12px;
+    }
     #four button{
     	font-size: 14px;
     }
@@ -198,10 +204,30 @@ color: #00FFEF ;
 			<p style="color: grey">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></button>
 			<button style="background-image: linear-gradient(135deg,blue,navy);border:none; border-radius: 15px;"><i class="fa fa-upload">&nbsp;&nbsp;Upload prescription</i>
 			<p style="color: grey">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></button>
-			<button style="background-image: linear-gradient(135deg,blue,navy);border:none; border-radius: 15px;"><i class="fa fa-share">&nbsp;&nbsp;Refer & earn</i>
+			<button type="button" data-toggle="modal" data-target="#myModal" style="background-image: linear-gradient(135deg,blue,navy);border:none; border-radius: 15px;"><i class="fa fa-share">&nbsp;&nbsp;Refer & earn</i>
 			<p style="color: grey">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></button>
 </div>
 	</div>
+</div>
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content" style="background-color:#00004d;border-color: white;border-width: 3px;">
+    	<div class="container">
+      <div class="modal-header">
+        <h2 class="modal-title text-center m-auto">Refer Your Friends And <br> Earn <span style="color:#daa520">AB Coins</span></h2>
+        <button type="button" class="close" data-dismiss="modal" style="color: white">&times;</button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="Frame (3).png" >
+        <p>Your friends got <span style="color:#daa520"> 50 AB Coins</span> on SignUp and you get <span style="color:#daa520"> 50 AB Points </span> to everytime</p>
+        <button style="border: dashed; border-radius: 8px; background-color: #003168;width: 50%;"><p>Your referral code</p><span style="color:#daa520">AB78TR</span> Copy</button><br>
+        <button style="background-image: linear-gradient(135deg, darkblue,blue);padding: 12px;color: white;border-radius: 25px;border:none;"><i class="fa fa-facebook">&nbsp; Facebook</i></button>
+        <button style="background-image: linear-gradient(135deg,#4CBB17,#7CFC00);padding: 12px;color: white;border-radius: 25px;border:none"><i class="fa fa-whatsapp">&nbsp;WhatsApp</i></button>
+      </div>
+    </div>
+</div>
+  </div>
 </div>
 </body>
 </html>
